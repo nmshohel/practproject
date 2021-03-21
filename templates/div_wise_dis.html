@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Div wise district</title>
+</head>
+<body>
+<h3> {{ name }} Division all District </h3>
+
+{% for district in districts%}
+   {{ forloop.counter }} <a href=" {% url 'dist_detail' district.name%} "> {{ district }} </a> </br>
+{% endfor %}
+
+</body>
+</html>

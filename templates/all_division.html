@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>all division</title>
+</head>
+<body>
+<h1>This is template</h1>
+
+{% for division in divisions%}
+  {{ forloop.counter }} <a href="{% url 'div_wise_district' division.name %}">{{ division}} </a>   <br>
+{% endfor %}
+
+
+
+</body>
+</html>
